@@ -4,7 +4,7 @@ h1,p{
 }
 
 .ejemplo{
-    background-color: blue;
+    background-color: rgb(255, 0, 0);
     height: 20px;
 }
 
@@ -23,11 +23,20 @@ h2.ejemplo{
 }
 
 #orange{
-    color: orange;
+    color: orange !important;
 }
 #green{
     color: green;
 }
 #red{
+    color: red;
+}
+
+/* selector de atributos */
+a[href="juan.com"]{
+    color: red;
+}
+
+a[class="ejemplo"]{
     color: red;
 }

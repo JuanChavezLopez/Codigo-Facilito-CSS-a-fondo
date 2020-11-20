@@ -1,0 +1,15 @@
+
+
+h1{
+    background-color: hsla(18, 100%, 50%, .5);
+    border: double #eee 10px;
+    border-radius: 10px;
+
+    /* FUENTES */
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    /* font-size: 2.5em; 40px/16= 2.5 em */
+    font-size: 50%; /* 40px/16= 2.5 em*/
+
+
+}
