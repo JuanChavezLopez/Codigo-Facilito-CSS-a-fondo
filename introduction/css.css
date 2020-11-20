@@ -1,0 +1,60 @@
+h1,p{
+    color: green;
+    text-align: center;
+    height: 20px;
+}
+
+.ejemplo{
+    background-color: blue;
+    height: 20px;
+}
+
+h2.ejemplo{
+    color: white;
+    height: 40px;  
+}
+
+/* En este caso, el signo > se aplica solo a los hijos que especifica */
+
+/* signo > ul , aplica solo a los hijos */
+/* signo > ul >li , aplica  a los nietos */
+/* el padre manda a todo */
+#colores > ul > li{ 
+    background-color: yellow;
+    color: red;
+    font-size: 3em;
+}
+
+#colores > p{
+    background-color: blue !important;
+}
+
+#orange{
+    color: orange !important;
+}
+
+#mere{
+    color: green;
+}
+
+#apple{
+    color: red;
+}
+
+#blue{
+    color: blue !important;
+}
+
+#red{
+    color: red;
+}
+
+
+a[href="codigorumania.html"]{
+    color: red;
+}
+
+/* span h2{
+    color: red;
+    font-size: 20px;
+} */

@@ -1,0 +1,33 @@
+h1,p{
+    color: green;
+    text-align: center;
+}
+
+.ejemplo{
+    background-color: blue;
+    height: 20px;
+}
+
+/* here we replace */
+h2.ejemplo{
+    color: white;
+    height: 40px;
+}
+
+/* vamos a afectar a los nietos, si es hijo,solo se pondra el signo mayor. */
+/* lo que dice el padre prevalece, y los hijos van a obedecer */
+#colores > ul >li{
+    background-color: yellow;
+    color: red; 
+    font-size: 2em;
+}
+
+#orange{
+    color: orange;
+}
+#green{
+    color: green;
+}
+#red{
+    color: red;
+}
