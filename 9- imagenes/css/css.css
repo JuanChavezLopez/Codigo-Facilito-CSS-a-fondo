@@ -1,5 +1,6 @@
 body{
     font-size: 100%;
+    margin: 0px;
 }
 
 h1{
@@ -12,7 +13,6 @@ h1{
     text-align: center;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, .7);
-
 }
 
 /* TEXT DECORATION */
@@ -29,9 +29,6 @@ a{
 
 /* RELATIVE */
 
-.cat{
-    position: absolute;
-}
 
 /* position fixed, donde podemos ubicar a nuestro componente y no se vera afectado por el scroll */
 /* .title{
@@ -41,10 +38,52 @@ a{
     right: 33%;
 } */
 .title{
-    position: absolute;
+    width: 300px;
+    margin: auto;
 }
+
+.piramide{
+    position: relative;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.visita{
+    width: 400px;
+    border: double 10px blue;
+    border-radius: 50%;
+}
+
+.thumb{
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    
+}
+
+.thumb:hover{
+    width: 200px;
+    box-shadow: 0 0 2px  1px rgba(0, 140, 186, .5=8);
+}
+
 .container{
     position: relative;
     border: 1px solid red;
     height: 150px;
+    /* padding: 10px 5px 10px 5px; */
+}
+
+.text{
+    text-align: center;
+}
+
+.polaroid{
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    display: block;
+
 }

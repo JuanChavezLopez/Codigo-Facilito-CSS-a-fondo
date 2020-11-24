@@ -1,5 +1,10 @@
 body{
     font-size: 100%;
+    margin: 0px;
+}
+
+h2{
+    margin: 5px;
 }
 
 h1{
@@ -29,9 +34,6 @@ a{
 
 /* RELATIVE */
 
-.cat{
-    position: absolute;
-}
 
 /* position fixed, donde podemos ubicar a nuestro componente y no se vera afectado por el scroll */
 /* .title{
@@ -41,10 +43,18 @@ a{
     right: 33%;
 } */
 .title{
-    position: absolute;
+    width: 300px;
+    margin: auto;
 }
+
+.cat{
+    position: absolute;
+    margin: 0px;
+}
+
 .container{
     position: relative;
     border: 1px solid red;
     height: 150px;
+    /* padding: 10px 5px 10px 5px; */
 }
