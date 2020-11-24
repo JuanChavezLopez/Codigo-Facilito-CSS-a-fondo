@@ -67,9 +67,9 @@ a{
 }
 
 .container{
-    position: relative;
-    border: 1px solid red;
-    height: 150px;
+    /* position: relative; */
+    /* border: 1px solid red;
+    height: 150px; */
     /* padding: 10px 5px 10px 5px; */
 }
 
@@ -100,7 +100,9 @@ a{
     /* filter: invert(1); */
     /* filter: saturate(3); */
     filter:sepia(3);
+    cursor: pointer;
 }
+
 
 .imgtext{
     position: absolute;
@@ -120,5 +122,72 @@ div.polaroid{
     margin-bottom: 25px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     display: block;
+    transition: width 2s, transform .3s;
+    transition-delay: 1s;
 
+
+    animation-name: roll;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+
+
+}
+
+div.polaroid:hover{
+    /* transform: translateY(50px); */
+    /* transform: rotate(50deg); */
+    /* transform: scale(1.5,2); */
+    /* width: 300px;
+    transform: rotate(360deg); */
+}
+
+.cubo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 2s, heigth 2s, transform 4s;
+    transition-timing-function: ease-in;
+
+
+}
+
+
+
+@keyframes ejemplo{
+    /* from{ background-color: red;}
+    to{ background-color: yellow;} */
+    0%{ background-color: red;}
+    25%{ background-color: orange;}
+    50%{ background-color: yellow;}
+    100%{ background-color: blue;}
+}
+
+@keyframes skew{
+    0%{ transform:  skewX(20deg);}
+    100%{ transform:  skewY(-20deg);}
+}
+
+
+@keyframes roll{
+    0%{ transform:  rotate(0);}
+    100%{ transform:  rotate(360deg);}
+}
+
+@media screen and (max-width: 480px){/* iphone 4 */
+    body{
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:760px){/* phablets o tablets */
+    body{
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 761px){/* phablets o tablets */
+    body{
+        background-color: yellow;
+    }
 }
