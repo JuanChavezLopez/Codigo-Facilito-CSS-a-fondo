@@ -1,0 +1,37 @@
+div{
+    display: flex;
+    background-color: #f5f5f5;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 600px;
+    align-items: center;
+}
+
+
+button, p{
+    border:0;
+    font-size: 1em;
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: black;
+    min-width: 400px;
+    /* flex-grow: 1; */
+}
+
+
+button:nth-of-type(1){
+    background-color: #FF6759;
+    /* flex-grow: 2; */
+}
+
+button:nth-of-type(2){
+    background-color: #F79256;
+    /* flex-grow: 3; */
+}
+
+button:nth-of-type(3){
+    background-color: #36ce36;
+    /* flex-shrink: 4; */
+}
+
