@@ -1,6 +1,23 @@
+a:visited{
+    color: red;
+}
+
+a:link{
+    color: yellow;
+}
+
+a:active{
+    color: green;
+}
+
+a:hover{
+    background-color: black;
+}
+
 body{
     font-size: 100%;
     margin: 0px;
+
 }
 
 h1{
@@ -154,6 +171,7 @@ div.polaroid:hover{
 
 
 
+
 @keyframes ejemplo{
     /* from{ background-color: red;}
     to{ background-color: yellow;} */
@@ -179,11 +197,16 @@ div.polaroid:hover{
     body{
         background-color: red;
     }
+
 }
 
 @media screen and (min-width: 481px) and (max-width:760px){/* phablets o tablets */
     body{
         background-color: green;
+    }
+
+    .cubo{
+        display: none;
     }
 }
 
@@ -191,4 +214,14 @@ div.polaroid:hover{
     body{
         background-color: yellow;
     }
+
+    div.polaroid{
+        display: inline-block;
+        margin-left: 1%;
+    }
+
+    .cubo{
+        display: none;
+    }
+
 }

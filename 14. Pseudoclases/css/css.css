@@ -152,7 +152,20 @@ div.polaroid:hover{
 
 }
 
+/* -----------------------PSEUDOCLASES------------------ */
 
+/* .parrafo::first-line{
+    color: orange;
+} */
+/* .parrafo::first-letter{
+    color: red;
+    font-size: 3em;
+} */
+
+.parrafo::selection{
+    background-color: red;
+    color: white;
+}
 
 @keyframes ejemplo{
     /* from{ background-color: red;}
@@ -179,11 +192,16 @@ div.polaroid:hover{
     body{
         background-color: red;
     }
+
 }
 
 @media screen and (min-width: 481px) and (max-width:760px){/* phablets o tablets */
     body{
         background-color: green;
+    }
+
+    .cubo{
+        display: none;
     }
 }
 
@@ -191,4 +209,14 @@ div.polaroid:hover{
     body{
         background-color: yellow;
     }
+
+    div.polaroid{
+        display: inline-block;
+        margin-left: 1%;
+    }
+
+    .cubo{
+        display: none;
+    }
+
 }
